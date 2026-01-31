@@ -1,0 +1,32 @@
+.privacy-notice {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #e7f3ff;
+  border: 1px solid #b3d9ff;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.privacy-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.privacy-content {
+  color: #004085;
+  line-height: 1.5;
+}
+
+.privacy-content strong {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .privacy-notice {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.8rem;
+  }
+}
