@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 app.use(express.static(path.join(__dirname, "dist")));
 
-// ✅ No app.get("*") anywhere — compatible fix
+// SPA fallback - serves index.html for client-side routing
 app.use((req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
